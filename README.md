@@ -1,4 +1,4 @@
-# ExpressTypescriptBase
+# Express Typescript Base
 
 ## Start development
 ```
