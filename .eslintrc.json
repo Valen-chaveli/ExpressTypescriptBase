@@ -1,0 +1,47 @@
+/* 
+  Paquetes
+
+  - eslint
+  - eslint-config-standard
+  - eslint-plugin-import
+  - eslint-plugin-node
+  - eslint-plugin-promise
+  - eslint-plugin-standard
+
+  - @typescript-eslint/parser para la opcion "parser"
+  - @typescript-eslint/eslint-plugin
+  - typescript
+*/
+{
+  "parser": "@typescript-eslint/parser",
+  "parserOptions": {
+    "ecmaVersion": "latest",
+    "jsx": false
+  },
+  "plugins": ["@typescript-eslint"],
+
+  "extends": ["eslint:recommended", "plugin:@typescript-eslint/recommended"],
+
+  // https://eslint.org/docs/user-guide/configuring/language-options#specifying-environments
+  "env": {
+    // "browser": true, // Variables globales del navegador
+    "es2021": true,
+    "node": true,
+    "mocha": true
+  },
+  "rules": {
+    "indent": ["warn", 4], // Indentacion
+    "quotes": ["warn", "single"], // Tipo de comillas
+    "semi": ["warn", "always"], // Punto y coma
+    "no-console": "warn", // Mensajes en consola
+    "spaced-comment": "warn", // Espacio en los comentarios
+    "comma-spacing": "warn", // Espacio entre comas
+    "no-use-before-define": "warn",
+    "strict": "warn",
+    "prefer-arrow-callback": "warn",
+    "arrow-spacing": "warn",
+    "camelcase": "warn",
+    "no-var": "error",
+    "no-dupe-args": "error"
+  }
+}

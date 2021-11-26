@@ -1,9 +1,9 @@
-import express from 'express';
+import express from 'express'
 
-const indexRouter = express();
+const indexRouter = express()
 
-indexRouter.get("/", (req, res) => {
-    return res.render("index", { test : "Hello World" });
+indexRouter.get('/', (req, res) => {
+  return res.render('index', { test: 'Altissimo' })
 })
 
-export default indexRouter;
+export default indexRouter
