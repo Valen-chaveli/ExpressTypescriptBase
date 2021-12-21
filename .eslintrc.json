@@ -29,6 +29,7 @@
     "node": true,
     "mocha": true
   },
+  "ignorePatterns": [".eslintrc.js"],
   "rules": {
     "indent": ["warn", 4], // Indentacion
     "quotes": ["warn", "single"], // Tipo de comillas

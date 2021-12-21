@@ -6,11 +6,11 @@ import indexRouter from './routes';
 import cors from 'cors';
 
 const main = async() => {
+    
     const app = express();
     app.set('view engine', 'jade');
     app.set('views', join(__dirname, 'views'));
 
-  
     // Construct a schema, using GraphQL schema language
     const schema = buildSchema(`type Query { 
             hello: String 
